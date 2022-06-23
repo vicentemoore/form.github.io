@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    --font1: 'Josefin Sans', sans-serif;
+    --color1: #73b6c8;
+    --color2: #2a9793;
+    --color3: #438484;
+    --color4: #39576f;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    font-family: var(--font1);
+    padding: 23px;
+    bottom: 0;
+    background: linear-gradient(to right, #0c1429, #39576f, #0c1429);
+    border-bottom: 2px solid var(--color1);
+}
+header h1 {
+    font-size: 30px;
+}
+header span {
+    color: var(--color2);
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+header li {
+    padding-left: 20px;
+}
+header ul li img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* FORM */
+form {
+    text-align: center;
+    background-color: #10202d;
+    padding: 42px;
+    margin-top: 50px;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--color1);
+    border-radius: 7px;
+    color: white;
+    font-family: var(--font1);
+    margin-bottom: 40px;
+}
+form span {
+    color: var(--color2);
+}
+form h1 {
+    width: 100%;
+    padding-bottom: 13px;
+    border-bottom: 1.5px solid var(--color3);
+    margin-bottom: 30px;
+}
+input {
+    padding: 3px;
+}
+form label {
+    font-size: 18px;
+    color: var(--color1);
+}
+.form-check-label {
+    font-size: 14px;
+}
+.form-check input{
+    background-color: var(--color3);
+}
+#bar{
+    background:#0c1429; 
+    color:white;
+    height: 40px;
+    border: 2px solid var(--color4);
+    border-radius: 5px;
+    outline: none;
+}
+#bar:hover{
+    animation: pulsate 1.5s ease-in-out;
+    border: 2px solid var(--color2);
+}
+
+/* BUTTON */
+.button{
+    font-weight: bold;
+    background-color: #0f0c29;
+    color: var(--color4);
+    padding: 10px 26px;
+    border: 2.3px solid var(--color3);
+    border-radius:7px;
+    cursor: pointer;
+}
+.button:hover{
+    animation: pulsate 1.5s ease-in-out;
+    color: var(--color1);
+}
+@keyframes pulsate{
+    13%{
+        box-shadow: 
+        0px 0px 25px var(--color3),
+        0px 0px 50px #16387c;
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width:620px){
+    header{
+        font-size: 11px;
+        text-align: center;
+    }
+    form {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
