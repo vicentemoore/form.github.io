@@ -53,7 +53,7 @@ form {
     align-items: center;
     flex-direction: column;
     border: 2px solid var(--color1);
-    border-radius: 7px;
+    border-radius: 7%;
     color: white;
     font-family: var(--font1);
     margin-bottom: 40px;
@@ -119,10 +119,16 @@ form label {
 @media screen and (max-width:620px){
     header{
         font-size: 11px;
-        text-align: center;
     }
     form {
         margin-left: 10%;
         margin-right: 10%;
+        border-radius: 10px;
+    }
+    header ul {
+        flex-direction: column;
+    }
+    header img {
+        margin-bottom: 6px;
     }
 }
